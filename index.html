@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gerzsenyi László honlapja." />
+    <title>Gerzsenyi László honlapja</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      body {
+        background-color: #000;
+        overflow: hidden;
+        margin: 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      div {
+        min-height: 100vh;
+        min-width: 100%;
+        background-size: cover;
+        background-position: center;
+        animation: fade 2s;
+      }
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      h1 {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 75px;
+        max-width: 400px;
+        color: #fff;
+
+        text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 5px #000,
+          0 0 25px #000, 0 0 25px #000, 0 0 25px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <span></span>
+    <h1>Gerzsenyi László honlapja</h1>
+  </body>
+  <script>
+    (load = () => {
+      document.getElementsByTagName('span')[0].innerHTML = `
+   <div 
+   style="background-image: url(https://source.unsplash.com/random/?music,${Math.random()})"></div>`;
+    })();
+    window.addEventListener('click', load);
+  </script>
+</html>
